@@ -12,9 +12,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
     <title>Hello, world!</title>
+    
 </head>
 
 <body>
+
+    <button onclick="mostrar()">Haz click</button>
+
+  
+
+
+
     <nav class="navbar navbar-expand-lg navStyle">
         <a class="brand-navbar" href="#"><img src="https://images.vexels.com/media/users/3/200092/isolated/preview/a03623162f1fbf53e660e401b6e7f58a-icono-de-env-iacute-o-trazo-rosa-by-vexels.png" alt="Responsive image" height="60px"></a>
         <button class="navbar-toggler" data-toggle="collapse" data-target="#mainMenu">
@@ -38,6 +46,7 @@
             </ul>
         </div>
     </nav>
+   
     <section>
         <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
             <div class="carousel-inner">
@@ -84,7 +93,9 @@
 
     <div class="container ">
 
-        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <form action="">
+
+             <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -237,15 +248,15 @@
                     </div>
                 </div>
             </div>
-        </div>
+             </div>
 
 
 
-        <section class="our-publication pt-100 pb-70 ">
+            <section class="our-publication pt-100 pb-70 ">
             <div class="container ">
                 <div class="section-header ">
                     <i class="fa fa-book "></i>
-                    <h2>Our Publications</h2>
+                    <h2>Productos</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod labore et dolore magna aliqua.</p>
                 </div>
 
@@ -265,7 +276,7 @@
                             </figure>
 
                             <div class="publication-content ">
-                                <span class="category ">Book</span>
+                                <span class="category " >Book</span>
                                 <h3><a href="# ">Think Python</a></h3>
                                 <ul>
                                     <li><i class="icofont-star "></i></li>
@@ -329,7 +340,8 @@
                             </figure>
 
                             <div class="publication-content ">
-                                <span class="category ">Book</span>
+                                <span class="category " id="producto" value="ochoa" >Book</span>
+                                <input id="recuperar" value="perrra"></input>
                                 <h3><a href="# ">Think Python</a></h3>
                                 <ul>
                                     <li><i class="icofont-star "></i></li>
@@ -342,6 +354,7 @@
                             </div>
 
                             <div class="add-to-cart ">
+                                <button type="button" onclick="listar()"></button>
                                 <a href="# " data-toggle="modal" data-target="#exampleModal" class="default-btn ">Add to Cart</a>
                             </div>
                         </div>
@@ -379,9 +392,17 @@
                     </div>
                 </div>
             </div>
-        </section>
+            </section>
+  
+        </form>
+  
+
     </div>
 
+
+
+
+  
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js " integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 " crossorigin="anonymous "></script>
@@ -389,6 +410,7 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js "></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js " integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM " crossorigin="anonymous "></script>
     <script src="../scripts/functions.js" type="text/javascript"></script>
+    <script src="../scripts/datos.js" type="text/javascript"></script>
 </body>
 
 </html>
